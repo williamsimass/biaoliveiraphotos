@@ -1,0 +1,1073 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Quicksand:wght@300&display=swap");
+@font-face {
+  font-family: "Harshita";
+  src: url("Harshita.otf") format("opentype"),
+    url("Harshita.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  /*
+    Tipos de format()
+    opentype (otf)
+    truetype (ttf)
+    embedded-opentype
+    truetype-aat
+    svg
+    */
+}
+@font-face {
+  font-family: "ayres";
+  src: url("./Ayres.otf") format("opentype"),
+    url("./Ayres.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Geosans";
+  src: url("./GeosansLight.ttf") format("truetype");
+}
+.navbar-brand {
+  font-family: "Quicksand", sans-serif;
+}
+.nav-item {
+  font-family: "Quicksand", sans-serif;
+}
+.container-final {
+  font-family: "Quicksand", sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+}
+
+/* SOBRE */
+.home {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+#container-inicio {
+  width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+#container-inicio h1 {
+  width: 100%;
+  font-family: "Harshita";
+}
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+#soueu {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Harshita";
+  font-size: 50px;
+}
+
+.eu {
+  font-family: "geosans";
+  font-size: 20px;
+}
+.eu p {
+  font-family: "geosans";
+}
+
+.image {
+  width: 100%;
+  text-align: center;
+}
+
+.image img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #sobre {
+    flex-direction: row;
+  }
+
+  .info {
+    flex-basis: 50%;
+    padding: 0 20px;
+    text-align: left;
+  }
+
+  .image {
+    flex-basis: 50%;
+    text-align: right;
+  }
+
+  .image img {
+    width: 80%;
+  }
+}
+/*title*/
+.title,
+.subtitle {
+  font-family: "Geosans";
+  color: white;
+  position: absolute; /* definir como absoluto para posicionar em relação à div pai */
+  left: 50%; /* posicionar o elemento a 50% da largura da div pai */
+  transform: translateX(-50%); /* centralizar o elemento */
+}
+
+.title {
+  font-size: 5vw;
+  top: 40%; /* posicionar o h1 acima */
+}
+
+.subtitle {
+  font-size: 3vw;
+  top: 60%; /* posicionar o h2 abaixo */
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 5vw;
+  }
+
+  .subtitle {
+    font-size: 3vw;
+  }
+}
+
+/* NAO MEXER AQUI*/
+
+/* SESSOES CONTAINER*/
+#container-sessoes {
+  background-color: rgb(247, 247, 247);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#container-sessoes h2 {
+  font-family: "Harshita";
+  font-size: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  #container-sessoes h2 {
+    font-size: 50px;
+    padding: 40px;
+  }
+}
+
+#container-sefam {
+  font-family: "Harshita";
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subtitulo-center2 {
+  color: black;
+}
+#container-sefam h1 {
+  font-size: 70px;
+  white-space: nowrap;
+}
+.right-side1 {
+  text-align: center;
+  width: 50%;
+}
+
+.right-side1 h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 60%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+}
+
+.titulo {
+  text-align: center;
+}
+
+.subtitulo-center {
+  text-align: center;
+}
+.right-side h5 {
+  width: 80%;
+}
+#container-sefam img {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .left-side1 {
+    display: none;
+  }
+  #container-sefam {
+    flex-direction: column;
+  }
+
+  .right-side1 {
+    width: 80%;
+  }
+
+  #container-sefam img {
+    width: 100%;
+  }
+  #container-sefam h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 768px) {
+  /* Mantém a imagem visível */
+  .left-side {
+    display: block;
+  }
+}
+
+#container-cardfam {
+  font-family: "Pinyon Script", cursive;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.cardtitu {
+  font-family: "Harshita";
+  margin-top: 50px;
+  font-size: 80px;
+}
+
+.cardsubti {
+  font-family: "Geosans";
+  font-size: 50px;
+}
+
+/* Media query para tamanhos de tela menores */
+@media screen and (max-width: 768px) {
+  .cardtitu {
+    text-align: center;
+    font-size: 60px; /* Ajuste o tamanho do título para telas menores */
+  }
+
+  .cardsubti {
+    font-size: 40px; /* Ajuste o tamanho do subtítulo para telas menores */
+  }
+}
+
+/* Media query para tamanhos de tela ainda menores */
+@media screen and (max-width: 480px) {
+  .cardtitu {
+    font-size: 40px; /* Ajuste o tamanho do título para telas ainda menores */
+  }
+
+  .cardsubti {
+    font-size: 30px; /* Ajuste o tamanho do subtítulo para telas ainda menores */
+  }
+}
+
+#card-central {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card-s {
+  width: 220px;
+  height: 268px;
+  background: #e1bfb6;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #e1bfb6;
+  margin-right: 85px;
+  margin-left: 85px;
+  margin-bottom: 50px;
+}
+
+.card-s .card-border-top {
+  width: 60%;
+  height: 3%;
+  background: #e1bfb6;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card-s span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.card-s .job {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.card-s .img {
+  width: 70px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.img img {
+  width: 69px;
+  height: 79px;
+  object-fit: cover;
+}
+
+.card-s button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  background: #e4c6c6;
+  color: white;
+  font-weight: 600;
+}
+
+.card-s button:hover {
+  background: #e1bfb6;
+}
+
+/* Media queries para tornar os cards responsivos */
+
+@media (max-width: 768px) {
+  .card-s {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .card-s .img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-s span {
+    font-size: 19px;
+    padding-top: 8px;
+  }
+
+  .card-s .job {
+    font-size: 18px;
+    padding-top: 2px;
+  }
+
+  .card-s button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+
+#container-gestante {
+  font-family: "Harshita";
+  background-color: #dfaaaa;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-gestante h1 {
+  font-size: 70px;
+  white-space: nowrap;
+  color: white;
+}
+.right-side {
+  text-align: center;
+  width: 50%;
+}
+
+.right-side h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 85%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+  color: rgb(255, 255, 255);
+}
+#container-gestante img {
+  width: 80%;
+}
+
+.subtitulo-center3 h5{
+  color: white;
+
+}
+@media (max-width: 768px) {
+  .left-side {
+    display: none;
+  }
+  
+  .right-side {
+    width: 80%;
+    margin: auto;
+  }
+
+  #container-gestante img {
+    width: 100%;
+  }
+  #container-gestante h1 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 768px) {
+  /* Mantém a imagem visível */
+  .left-side {
+    display: block;
+  }
+}
+
+#container-cardges {
+  font-family: "Pinyon Script", cursive;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#container-smashcake {
+  font-family: "Harshita";
+  background-color: #818d5d;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-smashcake h1 {
+  font-size: 40px;
+  white-space: nowrap;
+  color: white;
+}
+
+.right-side2 h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 85%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+}
+.right-side3 {
+  text-align: center;
+  width: 50%;
+  margin-right: 60px;
+}
+
+.right-side3 h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 85%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+}
+.right-side3 img {
+  width: 70%;
+}
+#container-smashcake .left-side2 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .left-side2 {
+    display: none;
+  }
+  #container-smashcake {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .right-side3 {
+    width: 80%;
+    margin: auto;
+  }
+
+  #container-smashcake img {
+    width: 80%;
+  }
+  #container-smashcake h1 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+#container-wedding {
+  font-family: "Harshita";
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-wedding h1 {
+  font-size: 50px;
+  white-space: nowrap;
+  color: white;
+}
+.right-side {
+  text-align: center;
+  width: 50%;
+  margin-right: 60px;
+}
+
+.right-side h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 85%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+  color: rgb(255, 255, 255);
+}
+#container-wedding img {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .left-side2 {
+    display: none;
+  }
+  #container-wedding {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .right-side3 {
+    width: 80%;
+    margin: auto;
+  }
+
+  #container-wedding img {
+    width: 80%;
+  }
+  #container-wedding h1 {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+#container-smashfruit {
+  font-family: "Harshita";
+  background-color: #818d5d;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-side3 img {
+  width: 70%;
+}
+.right-side3 h1 {
+  color: white;
+}
+.right-side3 h5 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  #container-smashfruit {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .right-side3 {
+    width: 80%;
+    margin: auto;
+  }
+
+  #container-smashfruit img {
+    width: 80%;
+  }
+  #container-smashfruit h1 {
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+
+#container-cardfruit {
+  font-family: "Pinyon Script", cursive;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+  .card-s {
+    /* Ajuste o tamanho e alinhamento conforme necessário */
+    width: 100%;
+    text-align: center;
+  }
+
+  .img {
+    /* Centralize a imagem na tela */
+    display: flex;
+    justify-content: center;
+  }
+  .imgs {
+    /* Centralize a imagem na tela */
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#container-acomp {
+  font-family: "Harshita";
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-acomp h1 {
+  font-size: 50px;
+  white-space: nowrap;
+}
+.right-side4 {
+  text-align: center;
+  width: 50%;
+  margin-right: 60px;
+}
+
+.right-side4 h5 {
+  font-family: "Geosans";
+  text-align: left;
+  width: 80%; /* Largura do texto */
+  margin: 20px auto; /* Margem acima e abaixo, e centralização horizontal */
+}
+#container-acomp img {
+  width: 80%;
+}
+@media (max-width: 768px) {
+  #container-gestante {
+    margin: auto;
+    flex-direction: column;
+  }
+
+  .right-side4 {
+    width: 80%;
+    margin: auto;
+  }
+
+  #container-acomp img {
+    width: 100%;
+  }
+  #container-acomp h1 {
+    font-size: 40px;
+  }
+}
+#container-cardacomp {
+  font-family: "Pinyon Script", cursive;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+#container-pagamento {
+  font-family: "Harshita";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.left-side7 {
+  width: 50%;
+}
+
+.left-side7 img {
+  width: 100%;
+  height: auto;
+}
+
+.right-side6 {
+  width: 50%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.right-side6 h1 {
+  white-space: nowrap;
+}
+.right-side6 p {
+  font-family: "Geosans";
+  font-size: 23px;
+  width: 75%;
+}
+.right-side6 button {
+  font-family: "Geosans";
+  font-size: 20px;
+  background-color: #c8a287;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+#text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: auto;
+  margin-bottom: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  #container-pagamento {
+    flex-direction: column;
+  }
+
+  .left-side7 {
+    width: 100%;
+  }
+
+  .right-side6 {
+    width: 100%;
+  }
+
+  .right-side6 button {
+    margin-top: 30px;
+  }
+  .left-side7 {
+    display: none;
+  }
+}
+
+#card-centrals {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card-ss {
+  width: 220px;
+  height: 268px;
+  background: #e1bfb6;
+  border-radius: 15px;
+  box-shadow: 1px 5px 60px 0px #e1bfb6;
+  margin-right: 85px;
+  margin-left: 85px;
+  margin-bottom: 100px;
+}
+
+.card-ss .card-border-tops {
+  width: 60%;
+  height: 3%;
+  background: #e1bfb6;
+  margin: auto;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.card-ss span {
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  display: block;
+  padding-top: 10px;
+  font-size: 16px;
+}
+
+.card-ss .jobs {
+  font-weight: 400;
+  color: white;
+  display: block;
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+
+.card-ss .imgs {
+  width: 70px;
+  height: 80px;
+  background: #ffffff;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.imgs img {
+  width: 69px;
+  height: 79px;
+  object-fit: cover;
+}
+
+.card-ss button {
+  padding: 8px 25px;
+  display: block;
+  margin: auto;
+  border-radius: 8px;
+  border: none;
+  background: #e4c6c6;
+  color: white;
+  font-weight: 600;
+}
+
+.card-ss button:hover {
+  background: #e1bfb6;
+}
+
+/* Media queries para tornar os cards responsivos */
+
+@media (max-width: 768px) {
+  .card-ss {
+    width: 80%;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 50px;
+  }
+
+  .card-ss .imgs {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-ss span {
+    font-size: 19px;
+    padding-top: 8px;
+  }
+
+  .card-ss .jobs {
+    font-size: 15px;
+    padding-top: 2px;
+  }
+
+  .card-ss button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+}
+#container-contato {
+  font-family: "Harshita";
+  display: flex;
+  justify-content: center;
+}
+
+#container-contato2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-side8 {
+  width: 50%;
+  text-align: left;
+  overflow: hidden;
+}
+
+.left-side8 img {
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+  margin-bottom: -70px;
+}
+.right-side9 {
+  width: 50%;
+  text-align: center; /* Centralize o texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralize verticalmente */
+  justify-content: center; /* Centralize verticalmente */
+  height: 100%;
+  margin-top: 80px;
+}
+
+.right-side9 h1 {
+  white-space: nowrap;
+}
+
+.right-side9 p {
+  font-family: "Geosans";
+  width: 80%;
+  font-size: 23px;
+  margin-bottom: 20px;
+  text-align: center; /* Centralize o texto */
+}
+
+.right-side9 a {
+  font-family: "Geosans";
+  display: flex;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+}
+
+.right-side9 a i {
+  margin-right: 10px;
+}
+
+.right-side9 a:not(:last-child) {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.right-side9 a:hover {
+  color: #555;
+}
+
+@media only screen and (max-width: 768px) {
+  #container-contato2 {
+    display: flex;
+    justify-content: center;
+  }
+  .left-side8 {
+    display: none;
+  }
+  .right-side9 {
+    width: 100%;
+    text-align: center;
+    align-items: center; /* Centralize verticalmente */
+    justify-content: center; /* Centralize verticalmente */
+    margin-top: 40px; /* Ajuste a margem superior para centralizar melhor */
+  }
+  h1.titulo2 {
+    margin-left: 40px;
+    text-align: center;
+  }
+}
+.butt {
+  text-decoration: none;
+  color: white; /* Define a cor do texto para branco */
+}
+
+/* CSS */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #818d5d;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  box-shadow: 2px 2px 3px #999;
+  line-height: 60px; /* centraliza o texto verticalmente */
+  transition: transform 0.3s; /* adiciona transição */
+}
+
+.whatsapp-float:hover {
+  background-color: #818d5d;
+  color: #fff;
+  transform: scale(1.1); /* aumenta o tamanho do ícone */
+  animation: pulse 1s ease-in-out infinite; /* adiciona a animação */
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* CSS */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px; /* alterado de "right" para "left" */
+  display: none;
+  background-color: #818d5d;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+  box-shadow: 2px 2px 3px #999;
+}
+
+.back-to-top:hover {
+  background-color: #818d5d;
+  color: #fff;
+}
+
+.back-to-top.show {
+  display: block;
+}
+
+
+/* Estilos do carousel */
+.owl-carousel .item {
+  margin: 10px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Ajuste a altura das imagens como desejado */
+  object-fit: cover;
+}
+
+.titulo-fim{
+  text-align: center;
+}
