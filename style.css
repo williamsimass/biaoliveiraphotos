@@ -88,6 +88,7 @@
 .image {
   width: 100%;
   text-align: center;
+  padding-bottom: 12px;
 }
 
 .image img {
@@ -153,18 +154,20 @@
   background-color: rgb(247, 247, 247);
   width: 100%;
   margin: 0 auto;
+  margin-top: 30px;
 }
 
 #container-sessoes h2 {
   font-family: "Harshita";
   font-size: 100px;
   text-align: center;
-  padding-top: 50px;
+  
 }
 @media (max-width: 768px) {
   #container-sessoes h2 {
     font-size: 50px;
-    padding: 40px;
+    padding-top: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -259,11 +262,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 480px) {
-  .titulo {
-    font-size: 30%;
-  }
-}
 .cardsubti {
   font-family: "Geosans";
   font-size: 50px;
